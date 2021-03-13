@@ -7,6 +7,7 @@ export const heading = (size) => {
         font-size: ${size};
     `;
 };
+
 export const GlobalStyle = createGlobalStyle`
     ${({ theme }) => `
         h1 {

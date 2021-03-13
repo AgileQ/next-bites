@@ -12,6 +12,7 @@ const border_color = `#e6e6e6`;
 const header_color = `#ffffff`;
 const header_border_color = header_color;
 const border_width = `2px`;
+
 export const theme = {
   "font-size-xs": font_size_xs,
   "font-size-sm": font_size_sm,
