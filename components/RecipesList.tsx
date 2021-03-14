@@ -7,6 +7,7 @@ import { Recipe } from "../generated/apollo-components";
 import { Loading } from "./notify/Loading";
 import { Warning } from "./notify/Warning";
 import { Error } from "./notify/Error";
+import { RecipeListItem } from "./RecipeListItem";
 export enum queryEnum {
   userLikes = "userLikes",
   recipes = "recipes",
@@ -40,7 +41,11 @@ export const RecipesList = ({
   return (
     <Row>
       {recipesList.map((recipe: Recipe) => (
-        <p key={recipe.id}>{recipe.title}</p>
+        <RecipeListItem
+          recipe={recipe}
+          parentRoute={parentRoute}
+          key={`${recipe.id}-${queryType}`}
+        />
       ))}
     </Row>
   );
