@@ -1,5 +1,6 @@
 import { Spin } from "antd";
 import styled from "styled-components";
+
 const StyledSpinner = styled.div`
   text-align: center;
   border-radius: 4px;
@@ -7,6 +8,7 @@ const StyledSpinner = styled.div`
   padding: 30px 50px;
   margin: 200px 0;
 `;
+
 export const Loading = () => (
   <StyledSpinner>
     <Spin size="large" />
