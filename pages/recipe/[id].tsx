@@ -4,12 +4,12 @@ import * as _ from "lodash";
 import { Loading } from "../../components/notify/Loading";
 import { MainLayout } from "../../components/layout/MainLayout";
 import { Error } from "../../components/notify/Error";
+import { OneRecipe } from "../../components/OneRecipe";
 
 const Recipe = ({ id }) => {
   const { loading, data, error } = useQuery(recipeGraphQL, {
     variables: { where: { id } },
   });
-
   const title = _.get(data, "recipe.title");
   if (loading) {
     return (
@@ -34,7 +34,7 @@ const Recipe = ({ id }) => {
   }
   return (
     <MainLayout title={title}>
-      <p>{title}</p>
+      <OneRecipe recipe={data.recipe} />
     </MainLayout>
   );
 };

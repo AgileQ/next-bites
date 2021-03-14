@@ -29,6 +29,7 @@
     "isomorphic-unfetch": "^3.1.0",
     "lodash": "^4.17.21",
     "next": "^10.0.8",
+    "pluralize": "^8.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-ellipsis-text": "^1.2.1",
