@@ -5,7 +5,8 @@ import { GlobalStyle } from '../../utils/globalStyle';
 import Head from 'next/head';
 import { Layout } from 'antd';
 import { MainFooter } from './MainFooter';
-import { MainNavbar } from './MainNavbar';
+import { MainNavBar } from './MainNavBar';
+
 const { Content } = Layout;
 const MainHead = ({ title }: { title: string }) => (
   <Head>
@@ -58,7 +59,7 @@ export class MainLayout extends Component<Props> {
         <MainHead title={title} />
         <GlobalStyle />
         <Layout>
-          <MainNavbar />
+          <MainNavBar />
           <Content>{children}</Content>
           <MainFooter />
         </Layout>

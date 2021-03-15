@@ -59,7 +59,7 @@ const StyledMenu = styled(Menu)`
   }
 `;
 
-export const MainNavbar = () => (
+export const MainNavBar = () => (
   <StyledHeader>
     <TitleContainer>
       <Title>
